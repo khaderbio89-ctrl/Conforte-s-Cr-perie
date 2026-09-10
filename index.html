@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conforte’s Crêperie</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8ed;
+            color: #3b2115;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #3b2115;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #ffd447;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #3b2115, #70452b);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            color: #ffd447;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* BOUTON */
+        .btn {
+            display: inline-block;
+            background-color: #ffd447;
+            color: #3b2115;
+            padding: 12px 22px;
+            margin: 10px 5px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #3b2115;
+            color: white;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #3b2115;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        /* ACCUEIL */
+        .hero {
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* MENU */
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        }
+
+        .menu-card h3 {
+            color: #3b2115;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #c58b00;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* A PROPOS */
+        .about {
+            text-align: center;
+            max-width: 800px;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+            background-color: #fff0d2;
+            border-radius: 20px;
+        }
+
+        .contact p {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+
+        .contact a.snapchat {
+            color: #3b2115;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact a.snapchat:hover {
+            color: #c58b00;
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #3b2115;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 40px;
+        }
+
+        footer strong {
+            color: #ffd447;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 35px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#menu">Menu</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="accueil">
+        <h1>Conforte’s Crêperie</h1>
+        <p>Authenticité • Qualité • Gourmandise</p>
+    </header>
+
+    <!-- ACCUEIL -->
+    <section class="hero">
+        <h2>🥞 Bienvenue chez Conforte’s Crêperie</h2>
+
+        <p>
+            Découvrez nos délicieuses crêpes préparées avec soin,
+            gourmandise et passion.
+        </p>
+
+        <a href="#menu" class="btn">🍫 Découvrir notre menu</a>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu">
+
+        <h2>🥞 Notre Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <h3>Crêpe Nature</h3>
+                <p>Une crêpe simple et délicieuse.</p>
+                <div class="price">500 F</div>
+            </div>
+
+            <div class="menu-card">
+                <h3>Crêpe Chocolat</h3>
+                <p>Une délicieuse crêpe au chocolat.</p>
+                <div class="price">1 000 F</div>
+            </div>
+
+            <div class="menu-card">
+                <h3>Crêpe Nutella</h3>
+                <p>Une crêpe gourmande au Nutella.</p>
+                <div class="price">1 500 F</div>
+            </div>
+
+            <div class="menu-card">
+                <h3>Crêpe Banane Chocolat</h3>
+                <p>Le mélange parfait entre banane et chocolat.</p>
+                <div class="price">2 000 F</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="apropos">
+
+        <h2>❤️ À propos de nous</h2>
+
+        <div class="about">
+
+            <p>
+                Conforte’s Crêperie est une crêperie qui vous propose
+                des crêpes savoureuses, préparées avec passion et
+                dans le respect de la qualité.
+            </p>
+
+            <p>
+                Notre objectif est de vous offrir une expérience
+                gourmande, simple et authentique.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- CONTACT --> 
+     <section>
+    <h2>⭐ Pourquoi choisir Conforte’s Crêperie ?</h2>
+
+    <div class="menu-container">
+
+        <div class="menu-card">
+            <h3>🥞 Des crêpes savoureuses</h3>
+            <p>Des crêpes préparées avec soin pour vous offrir un maximum de gourmandise.</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>✨ Qualité</h3>
+            <p>Nous accordons une grande importance à la qualité de nos produits.</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>❤️ Avec passion</h3>
+            <p>Chaque commande est préparée avec amour et attention.</p>
+        </div>
+
+    </div>
+</section>
+    <section class="contact" id="contact">
+
+        <h2>📞 Contactez-nous</h2>
+
+        <p>
+            🥞 Vos crêpes sont disponibles du lundi au vendredi
+            de 09h à 16h, et les week-ends de 09h à 20h.
+        </p>
+
+        <p>
+            📱 Appels & WhatsApp :
+            <strong>+229 01 41 74 69 51</strong>
+        </p>
+
+        <p>
+            👻 Snapchat :
+            <a
+                href="https://www.snapchat.com/add/c_alissoutin19"
+                target="_blank"
+                class="snapchat"
+            >
+                c_alissoutin19
+            </a>
+        </p>
+
+        <p>
+            💬 Pour une commande spéciale au-delà du week-end,
+            contactez-nous à l’avance.
+        </p>
+
+        <a href="tel:+2290141746951" class="btn">
+            📞 Appeler maintenant
+        </a>
+
+        <a
+            href="https://wa.me/2290141746951"
+            target="_blank"
+            class="btn"
+        >
+            💬 Commander sur WhatsApp
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 <strong>Conforte’s Crêperie</strong>
+        </p>
+
+        <p>
+            Authenticité • Qualité • Gourmandise 🥞
+        </p>
+    </footer>
+
+</body>
+</html>
